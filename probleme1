@@ -1,0 +1,37 @@
+ALGORITHME
+// define two arrays
+let set1 = [3, 1, 7, 9];
+let set2 = [2, 4, 1, 9, 3];
+
+// create a new array to store distinct elements
+let set3 = [];
+
+// loop through the first array
+for (let i = 0; i < set1.length; i++) {
+    // check if element is already present in set3
+    if (set3.indexOf(set1[i]) === -1) {
+        // if not, add it to the array
+        set3.push(set1[i]);
+    }
+}
+
+// loop through the second array
+for (let i = 0; i < set2.length; i++) {
+    // check if element is already present in set3
+    if (set3.indexOf(set2[i]) === -1) {
+        // if not, add it to the array
+        set3.push(set2[i]);
+    }
+}
+
+// define a variable to store the sum
+let sum = 0;
+
+// loop through the new array
+for (let i =0; i < set3.length; i++) {
+    // add each element to the sum
+    sum += set3[i];
+}
+
+// print the sum
+console.log(sum); // 13
